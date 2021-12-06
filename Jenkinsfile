@@ -4,6 +4,7 @@ pipeline {
     stage('calculation prep') {
       steps {
         sh 'pwd'
+        sh 'cd calculation-offer-service/CalculationServiceAPISolution'
       }
     }
 
