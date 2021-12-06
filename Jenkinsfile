@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('calculation prep') {
       steps {
-        sh 'sh \'pwd\''
+        sh 'pwd'
       }
     }
 
