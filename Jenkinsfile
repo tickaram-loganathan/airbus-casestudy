@@ -17,8 +17,8 @@ pipeline {
 
   }
   environment {
-    ECR_ID = '"ap-south-1"'
-    CALCULATION_SERVICE_IMAGE = '"tickaramv2-casestudy-calculation-service"'
+    ECR_ID = '142198642907.dkr.ecr.ap-south-1.amazonaws.com'
+    CALCULATION_SERVICE_IMAGE = 'tickaramv2-casestudy-calculation-service'
     ECR_CREDENTIALS = credentials('ecr-credentials')
   }
 }
