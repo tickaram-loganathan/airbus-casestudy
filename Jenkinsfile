@@ -4,7 +4,7 @@ pipeline {
     stage('calculation prep') {
       steps {
         sh 'pwd'
-        sh 'cd airbus-casestudy/source/calculation-offer-service/CalculationServiceAPISolution'
+        sh 'cd source/calculation-offer-service/CalculationServiceAPISolution'
         sh 'docker build -t $CALCULATION_SERVICE_IMAGE:latest -t $CALCULATION_SERVICE_IMAGE:$BUILD_NUMBER .'
         sh 'docker tag $CALCULATION_SERVICE_IMAGE:latest $ECR_ID/$CALCULATION_SERVICE_IMAGE:latest'
         sh 'docker tag $CALCULATION_SERVICE_IMAGE:$BUILD_NUMBER $ECR_ID/$CALCULATION_SERVICE_IMAGE:$BUILD_NUMBER'
